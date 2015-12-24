@@ -1,0 +1,256 @@
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+<script language='javascript' type="text/javascript">
+var d=new Date();
+$(document).ready(function(){
+	checkLoginWithFunc(function(){
+		$.ajaxSetup({ cache: false });
+		$.getScript("lang/statusRpt.js", function(data, textStatus){
+			loadTidTabByHtml(statusRpt);
+			$("#copyright").html("&copy 1996 - "+d.getFullYear()+" "+statusRpt.footer_t001);
+		});
+		gui.side.load("sidepg.htm");
+		gui.content.load("setup/dashboard.htm");
+		gui.timer.login.start(checkLogin,5000);
+//		gui.cfgbg.chgHeight(970);
+	});
+});
+
+function showDashboard(){
+	gui.content.load("setup/dashboard.htm"); 
+}
+function showWizardStart(){
+	setCookieMin("main_wizard_from", "wizard", 5);
+	gui.main.load("mainWizard.htm");
+}
+function showBasic2g(){
+        gui.content.load("setup/wlanBasic2g.htm");
+}
+function showSecurity2g(){
+        gui.content.load("setup/wlanSecurity2g.htm");
+}
+function showAdvanced2g(){
+        gui.content.load("setup/wlanAdvanced2g.htm");
+}
+function showWPS2g(){
+        gui.content.load("setup/wlanWPS2g.htm");
+}
+function showMacFilter2g(){
+        gui.content.load("setup/wlanMacFilter2g.htm");
+}
+function showStatusTable2g(){
+	showCoverpg("setup/wlanStatusTable2g.htm");
+}
+function showBasic5g(){
+        gui.content.load("setup/wlanBasic5g.htm");
+}
+function showSecurity5g(){
+        gui.content.load("setup/wlanSecurity5g.htm");
+}
+function showAdvanced5g(){
+        gui.content.load("setup/wlanAdvanced5g.htm");
+}
+function showWPS5g(){
+        gui.content.load("setup/wlanWPS5g.htm");
+}
+function showMacFilter5g(){
+        gui.content.load("setup/wlanMacFilter5g.htm");
+}
+function showStatusTable5g(){
+	showCoverpg("setup/wlanStatusTable5g.htm");
+}
+function showSitesurvey2g(){
+	showCoverpg("setup/sitesurvey2g.htm");
+}
+function showSitesurvey5g(){
+	showCoverpg("setup/sitesurvey5g.htm");
+}
+function showTools(){
+        gui.content.load("setup/toolsSystem.htm");
+}
+function showToolsSystem(){
+	gui.content.load("setup/toolsSystem.htm");
+}
+function showToolsTimezone(){
+	gui.content.load("setup/toolsTimezone.htm");
+}
+function showToolsRemote(){
+	gui.content.load("setup/toolsRemote.htm");
+}
+function showToolsBackup(){
+	gui.content.load("setup/toolsBackup.htm");
+}
+function showToolsFirmwareUpgrade(){
+	gui.content.load("setup/toolsFirmwareUpgrade.htm");
+}
+function showToolsReset(){
+	gui.content.load("setup/toolsReset.htm");
+}
+function showToolsDHCPStatus(){
+	gui.content.load("setup/toolsDHCPStatus.htm");
+}
+function showToolsSysMode(){
+	gui.content.load("setup/toolsSysMode.htm");
+}
+function showFastMode(){
+	gui.content.load("setup/toolsSysMode.htm");
+}
+function showToolsGreenMode(){
+	gui.content.load("setup/toolsGreenMode.htm");
+}
+</script>
+</head>
+<body topmargin="5" leftmargin="0">
+<!--<div class="container">-->
+<div class="rla" style="width:1000px;height:10px;margin:0px auto">
+	<div class="rla header">
+		<div class="rla" style="height:110px">
+			<div class="abs logoimg" style="left:0px"></div>
+			<div class="abs headerimg" style="left:0px;top:45px"></div>
+<!--			<div class="abs" style="left:800px;top:10px"></div>-->
+		</div>
+<!--
+		<div class="rla" style="height:45px">
+			<div class="logoimg"></div>
+		</div>
+		<div class="rla" style="height:120px">
+			<div class="headerimg"></div>
+		</div>
+-->
+	</div>
+	<div class="rla tleft" id="side" style="width:100%;height:31px;z-index:2"></div>
+	<div class="rla content" id="content"></div>
+<!--
+	<div class="rla footer">
+		<a class="footer dnone" href="http://www.askey.com">www.askey.com</a>&nbsp;|
+		<span id="copyright"></span>
+	</div>
+-->
+</div>
+<iframe id="coveriframe" class="abs nods bgblack mpb0" style="width:0px;height:0px;z-index:100;opacity:0;filter:alpha(opacity=0);top:0;left:0"/>
+<div id="cover" class="abs nods bgblack" style="width:100%;height:200px;z-index:200;opacity:0.8;filter:alpha(opacity=80);top:0;left:0"></div>
+<div id="covermsg1" class="abs nods fwhite vmiddle tcenter fs26 ftype" style="width:600px;height:200px;z-index:300;top:200px;left:50%;margin-left:-300px;line-height:200px"></div>
+<div id="coverpg" class="abs nods" style="width:800px;height:600px;z-index:300;top:100px;left:50%;margin-left:-400px;overflow:hidden;background:url(images/body_background.jpg);background-repeat:repeat"></div>
+<div id="covermsg2" class="abs nods" style="width:200px;height:60px;z-index:300;top:0;left:0">
+	<div class="abs bgblack" style="width:200px;height:60px;top:0;left:0"/>
+	<div class="abs bgwhite" style="width:196px;height:56px;top:2px;left:2px"/>
+	<div id="covermsg2msg" class="abs vmiddle fs12 tlr" style="width:196px;height:52px;top:2px;left:4px;line-height:22px;word-break: break-all"/>
+</div>
+<iframe id="covermsg2iframe" class="abs nods mpb0" style="width:300px;height:100px;z-index:100;top:10px;left:10px;opacity:0"/>
+<script>
+function showCover(){
+	$("#coveriframe").show();
+	$("#cover").show();
+	$("html,body").animate({scrollTop:0}, 0);
+	$("div#cover").css("height",window.document.body.scrollHeight);
+/*
+	$("html,body").animate({scrollTop:0}, 0); 
+	gui.timer.pooling.stop();
+	if($(window).width()<gui.cfgbg.minWidth){
+		$("#coveriframe").css("width",gui.cfgbg.minWidth+"px");
+		$("#cover").css("width",gui.cfgbg.minWidth+"px");
+	}else{
+		$("#coveriframe").css("width", $(window).width()+"px");
+		$("#cover").css("width", $(window).width()+"px");
+	}
+	if($(window).height()<gui.cfgbg.minHeight){
+		$("#coveriframe").css("height",gui.cfgbg.minHeight+"px");
+		$("#cover").css("height",gui.cfgbg.minHeight+"px");
+	}else{
+//		$("#coveriframe").css("height", $(window).height()+"px");
+//		$("#cover").css("height", $(window).height()+"px");
+		$("#coveriframe").css("height", $(document).height()+"px");
+		$("#cover").css("height", $(document).height()+"px");
+	}
+	$("#coveriframe").show();
+	$("#cover").show();
+*/
+}
+function hideCover(){
+	$("#cover").hide(0);
+	$("#coveriframe").hide(0);
+/*
+	poolingLink();
+	if(wizard.load()==1){
+		gui.main.reload();
+	}
+*/
+}
+function showCoverMsg1(msg){
+	showCover();
+	$("#covermsg1").html(msg);
+	$("#covermsg1").show();
+}
+function hideCoverMsg1(){
+	hideCover();
+	$("#covermsg1").hide(0);
+	//gui.content.reload();
+}
+function hideCoverMsg1NoreLoad(){
+	hideCover();
+	$("#covermsg1").hide(0);
+}
+function showCoverMsg1Expire(msg,t){
+	showCoverMsg1(msg);
+	setTimeout("hideCoverMsg1()",t);
+}
+function showCoverMsg1ExpireNoreLoad(msg,t){
+	showCoverMsg1(msg);
+	setTimeout("hideCoverMsg1NoreLoad()",t);
+}
+function showCoverpg(pg){
+	showCover();
+	$("#coverpg").show();
+	gui.coverpg.load(pg);
+}
+function hideCoverpg(){
+	hideCover();
+	$("#coverpg").hide();
+}
+function showCoverMsg2(msg,x,y){
+	$("#covermsg2").css("top",y+"px");
+	$("#covermsg2").css("left",x+"px");
+	$("#covermsg2msg").html(msg);
+	$("#covermsg2").show();
+}
+function hideCoverMsg2(){
+	$("#covermsg2").hide(0);
+}
+function checkipformat(ip){
+	if(ip.match(/^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/)){
+		if(ip != "0.0.0.0" && ip != "255.255.255.255"){
+			var splitip=ip.split(".",4);
+			for(var j=0;j<4;j++){
+				if(splitip[j].length>1){
+					var splitone=splitip[j].slice(0,1);
+					if(splitone==0){ return 1; }
+				}
+				var checkip=parseInt(splitip[j]);
+				if(checkip>255){ return 1; }
+			}
+		}else{ return 1; }
+	}else{ return 1; }
+}
+function checkmacformat(mac){
+	if(mac.match(/^[0-9a-fA-F]{2}:[0-9a-fA-F]{2}:[0-9a-fA-F]{2}:[0-9a-fA-F]{2}:[0-9a-fA-F]{2}:[0-9a-fA-F]{2}$/)){return 2;}
+	else{ return 1;}
+}
+function checkportformat(port){
+	if(port.match(/^\d{1,5}$/)){
+		if(port.length>1){
+			var port1=port.slice(0,1);
+			if(port1!=0){
+				var intport=parseInt(port);
+				if(intport<65536){
+				}else{ return 1; }
+			}else{ return 1; }
+		}else{
+			if(port>1){}
+			else{ return 1; }       
+		}
+	}else{ return 1; }
+}
+</script>
+</body>
+</html>
