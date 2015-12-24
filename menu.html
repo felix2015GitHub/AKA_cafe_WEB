@@ -3,12 +3,21 @@
 <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
 <script language='javascript' type="text/javascript">
 $(document).ready(function(){
-	
 });
+function xmas() {$("#content").load("xmas.html");}
+function mouseover(id) {$("#"+id).css("color", "#FFA500");}
+function mouseout(id) {$("#"+id).css("color", "#FFFFFF");}
 </script>
 </head>
 
 <body>
-	<table id="menuItem" align="center" style="width:1000px; height:31px"></table>
+	<table border="0" cellspacing="30" align="center">
+		<tr class="MenuFontStyle">
+			<td id="about" onmouseover="mouseover(id);" onmouseout="mouseout(id);">About</td>
+			<td id="story" onmouseover="mouseover(id);" onmouseout="mouseout(id);">Story</td>
+			<td id="news"  onmouseover="mouseover(id);" onmouseout="mouseout(id);">News</td>
+			<td id="xmas"  onmouseover="mouseover(id);" onmouseout="mouseout(id);"onclick="xmas();">Xmas</td>
+		</tr>			
+	</table>
 </body>
 </html>
