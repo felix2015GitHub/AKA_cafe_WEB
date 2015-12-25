@@ -5,18 +5,25 @@
 $(document).ready(function(){
 });
 function xmas() {$("#content").load("xmas.html");}
-function mouseover(id) {$("#"+id).css("color", "#FFA500");}
-function mouseout(id) {$("#"+id).css("color", "#FFFFFF");}
+/*
+$("#about").mouseover(function(){
+	$(this).css("color", "#FFA500");
+}).mouseout(function(){
+	$(this).css("color", "#FFFFFF");
+});
+*/
+//function mouseover(id) {$("#"+id).css("color", "#FFA500");}
+//function mouseout(id) {$("#"+id).css("color", "#FFFFFF");}
 </script>
 </head>
 
 <body>
 	<table border="0" cellspacing="30" align="center">
 		<tr class="MenuFontStyle">
-			<td id="about" onmouseover="mouseover(id);" onmouseout="mouseout(id);">About</td>
-			<td id="story" onmouseover="mouseover(id);" onmouseout="mouseout(id);">Story</td>
-			<td id="news"  onmouseover="mouseover(id);" onmouseout="mouseout(id);">News</td>
-			<td id="xmas"  onmouseover="mouseover(id);" onmouseout="mouseout(id);"onclick="xmas();">Xmas</td>
+			<td id="about" class="td_menu">About</td>
+			<td id="story" class="td_menu">Story</td>
+			<td id="news" class="td_menu">News</td>
+			<td id="xmas" onclick="xmas();" class="td_menu">Xmas</td>
 		</tr>			
 	</table>
 </body>
