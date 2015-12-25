@@ -5,25 +5,16 @@
 $(document).ready(function(){
 });
 function xmas() {$("#content").load("xmas.html");}
-/*
-$("#about").mouseover(function(){
-	$(this).css("color", "#FFA500");
-}).mouseout(function(){
-	$(this).css("color", "#FFFFFF");
-});
-*/
-//function mouseover(id) {$("#"+id).css("color", "#FFA500");}
-//function mouseout(id) {$("#"+id).css("color", "#FFFFFF");}
 </script>
 </head>
 
 <body>
-	<table border="0" cellspacing="30" align="center">
+	<table border="0" align="center" style="margin-top:13px">
 		<tr class="MenuFontStyle">
-			<td id="about" class="td_menu">About</td>
-			<td id="story" class="td_menu">Story</td>
-			<td id="news" class="td_menu">News</td>
-			<td id="xmas" onclick="xmas();" class="td_menu">Xmas</td>
+			<td id="about" class="td_menu" style="width:100px">About</td>
+			<td id="story" class="td_menu" style="width:100px">Story</td>
+			<td id="news" class="td_menu" style="width:100px">News</td>
+			<td id="xmas" onclick="xmas();" class="td_menu" style="width:100px">Xmas</td>
 		</tr>			
 	</table>
 </body>
