@@ -8,22 +8,15 @@
 <link rel="stylesheet" href="css/index_style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/coreFunc.js"></script>
 <script language='javascript' type="text/javascript">
 $(document).ready(function(){
-	// $("#indexBtn").attr("value", "Apply");
-	$("#menu").load("menu.html");
+	gui.main.load("main.html");
 });
 </script>
 </head>
 <body>
-<div class="rla" style="width:1280px; height:0px; top:0; margin:0px auto">
-	<div id="top" style="height:356px">
-		<div class="abs topimg" style="left:0px"></div>
-	</div>
-	<div id="menu" class="abs" style="top:306px; width:100%; height:50px"></div>
-	<div id="content" class="rla ContentFontStyle" style="top:10px; height:3000px; margin-top:0; background-color:#483D8B">
-		<span>Content</span>
-	</div>
+<div id="main" class="rla" style="width:1280px; height:0px; top:0; margin:0px auto">
 </div>
 </body>
 </html>
