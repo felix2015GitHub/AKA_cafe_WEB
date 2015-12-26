@@ -4,7 +4,10 @@
 .abs {position:absolute}
 .rla {position:relative}
 .AlignCenter {text-align:center}
-.MenuFontStyle {text-align:center; letter-spacing:2.5px; font-family:Monospace; font-size:24px; font-weight:bolder; font-variant:small-caps}
+.MenuFontStyle {text-align:center; letter-spacing:3.5px; font-family:Monospace; font-size:24px; font-weight:bolder; font-variant:small-caps}
+.ContentIntroTitle{ letter-spacing:2.5px; font-family:Monospace; font-size:30px; font-weight:bolder; color:#000000; font-variant:small-caps; }
+.ContentIntroText{ letter-spacing:2.5px; font-family:Monospace; font-size:18px; font-weight:bold; color:#000000; font-variant:small-caps; }
+.ContentFontStyle{ letter-spacing:2.5px; font-family:Monospace; font-size:15px; font-weight:bolder; color:#000000; font-variant:small-caps; }
 .topimg {
 	background: transparent url(../images/top_bg.jpg) no-repeat;
 	padding-right:5px;
@@ -28,12 +31,17 @@
 /****************************************************/
 /*			  		menu.html 				  		*/
 /****************************************************/
-#tr_menu td{ width: 100px; color: #FFFFFF; }
+#tr_menu td{ width: 150px; color: #FFFFFF; }
 #tr_menu td:hover{ color:#FFA500; cursor:pointer; }
 
 /****************************************************/
-/*			  		sale.html 				  		*/
+/*			  		cake.html 				  		*/
 /****************************************************/
-/*#salepage{background:rgba(255,255,255,0.6);}*/
-.ContentFontStyle{ letter-spacing:2.5px; font-family:Monospace; font-size:15px; font-weight:bolder; color:#000000; font-variant:small-caps; }
-
+div.img{
+    border: 1px solid #ccc;
+    float: left;
+    width: 20%;
+}
+div.img:hover{ border: 1px solid #777; }
+div.img img{ width: 100%; height: auto; }
+div.desc{ padding: 15px; text-align: center; }
