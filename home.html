@@ -4,7 +4,11 @@
 <script language='javascript' type="text/javascript">
 var imgCount=5;
 $(document).ready(function(){
-
+  /*
+  convertImgToBase64URL('images/home/home1.jpg', function(base64Img){
+    $("#first_img").attr("src", base64Img);
+   });
+  */
 });
 
 </script>
@@ -24,7 +28,7 @@ $(document).ready(function(){
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="images/home/home1.jpg" alt="First slide">
+          <img id="first_img" class="first-slide" src="images/home/home1.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
             <!--
