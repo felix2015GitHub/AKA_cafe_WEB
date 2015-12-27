@@ -35,13 +35,24 @@
 #tr_menu td:hover{ color:#FFA500; cursor:pointer; }
 
 /****************************************************/
-/*			  		cake.html 				  		*/
+/*				  	cake.html				 		*/
 /****************************************************/
-div.img{
-    border: 1px solid #ccc;
+div.cakeimg{
+    border: 1px solid #FFFFFF;
     float: left;
     width: 20%;
 }
-div.img:hover{ border: 1px solid #777; }
-div.img img{ width: 100%; height: auto; }
+div.cakeimg:hover{ border: 1px solid #777; }
+div.cakeimg img{ width: 100%; height: auto; }
+div.desc{ padding: 15px; text-align: center; }
+
+/****************************************************/
+/*			 	 	rent.html				 		*/
+/****************************************************/
+div.rentimg{
+    border: 1px solid #FFFFFF;
+    float: left;
+    width: 20%;
+}
+div.rentimg img{ width: 100%; height: auto; }
 div.desc{ padding: 15px; text-align: center; }
