@@ -42,8 +42,8 @@ div.cakeimg{
     float: left;
     width: 20%;
 }
-div.cakeimg:hover{ border: 1px solid #777; }
-div.cakeimg img{ width: 100%; height: auto; }
+div.cakeimg img{ width: 100%; height: auto; border: 1px solid #FFFFFF;}
+div.cakeimg:hover img{ border: 1px solid #777; }
 div.desc{ padding: 15px; text-align: center; }
 
 /****************************************************/

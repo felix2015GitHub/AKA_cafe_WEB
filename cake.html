@@ -3,33 +3,34 @@
 <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
 <script language='javascript' type="text/javascript">
 $(document).ready(function(){
-	
+	$("#cake_1").click(function(){
+			$("#cakemain").css("display", "none");
+			$("#cakeIntro01").css("display", "block");
+	});
 });
+function back_cakemain()
+{
+	$("#cakemain").css("display", "block");
+	$("#cakeIntro01").css("display", "none");
+}
 </script>
 </head>
 
 <body>
+<div id="cakemain" style="display:block">
 	<div class="ContentIntroTitle" align="center">巴黎手工預訂蛋糕</div>
 	<div class="ContentIntroText" align="center" style="margin-top: 10px">
 		拋開精緻食物的過度包裝，一只手工蛋糕的溫度，剛好適合巴黎的慵懶午後，<br>
-		巧妙搭上一杯香醇咖啡，你也能隨時擁有巴黎人的態度！<br>
-		<br>
+		巧妙搭上一杯香醇咖啡，你也能隨時擁有巴黎人的態度！<br><br>		
 		每一款巴黎推出的手工甜點，滿足愛嚐鮮的味蕾，客制化的預訂蛋糕，是專屬於親友間分享的喜悅。<br>
 		巴黎手工蛋糕會選用『<font color="blue">季節限定水果</font>』,圓形蛋糕歡迎接受來電預訂，也提供『<font color="blue">低溫宅配</font>』服務，切片蛋糕以當日為主，<br>
-		我們不定期推出新口味，敬請期待！<br>
-		<br>
+		我們不定期推出新口味，敬請期待！<br><br>		
 		AKA Cafe<br>
 		預約電話：03-658-0623
 	</div>
 	<div class="cakeimg ContentFontStyle" style="margin-top: 20px">
-		<a target="_blank" href="images/cake/cake01.jpg">
-			<img src="images/cake/cake01.jpg" alt="cake01">
-		</a>
-  		<div class="desc">紅寶石 CheeseCake<br>
-						  $380/3吋<br>
-						  $730/6吋<br>
-						  $800/7吋
-		</div>
+		<img id="cake_1" src="images/cake/cake01.jpg" alt="cake01">
+  		<div class="desc">紅寶石 CheeseCake</div>		
 	</div>
 	<div class="cakeimg ContentFontStyle" style="margin-top: 20px">
 		<a target="_blank" href="images/cake/cake04.jpg">
@@ -68,5 +69,27 @@ $(document).ready(function(){
 						  $950/7吋
 		</div>
 	</div>
+</div>
+<div id="cakeIntro01" style="display:none">
+	<table border="0" style="width:100%; margin-top:25px">
+		<tr height="30px">
+			<td class="ContentIntroTitle" align="center"><span style="vertical-align:middle;">紅寶石 CheeseCake</span></td>				
+		</tr>
+		<tr>
+			<td valign="center" width="60%" align="center">
+			    <img src="images/cake/cake01.jpg" alt="cake01" width="70%" style="margin: 20px;">
+			</td>
+			<td class="cakeimg ContentFontStyle" style="margin-top: 20px" valign="middle" width="40%">
+				<font color="#FFA500">紅寶石 CheeseCake</font><br>
+				------------------------<br><br>
+				成分：石榴、檸檬、Cheese、OREO餅乾、咖啡粉<br><br>				
+				$380/3吋<br>
+				$730/6吋<br>
+				$800/7吋<br><br><br><br>
+				<span style="cursor:pointer; text-decoration:underline; color:blue" onclick="back_cakemain();">Back</span>
+			</td>
+		</tr>
+	</table>
+</div>
 </body>
 </html>
