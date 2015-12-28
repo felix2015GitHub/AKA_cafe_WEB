@@ -7,11 +7,36 @@ $(document).ready(function(){
 			$("#cakemain").css("display", "none");
 			$("#cakeIntro01").css("display", "block");
 	});
+	$("#cake_2").click(function(){
+			$("#cakemain").css("display", "none");
+			$("#cakeIntro02").css("display", "block");
+	});
+	$("#cake_3").click(function(){
+			$("#cakemain").css("display", "none");
+			$("#cakeIntro03").css("display", "block");
+	});
+	$("#cake_4").click(function(){
+			$("#cakemain").css("display", "none");
+			$("#cakeIntro04").css("display", "block");
+	});
+	$("#cake_5").click(function(){
+			$("#cakemain").css("display", "none");
+			$("#cakeIntro05").css("display", "block");
+	});
+	$("#cake_6").click(function(){
+			$("#cakemain").css("display", "none");
+			$("#cakeIntro06").css("display", "block");
+	});
 });
 function back_cakemain()
 {
 	$("#cakemain").css("display", "block");
 	$("#cakeIntro01").css("display", "none");
+	$("#cakeIntro02").css("display", "none");
+	$("#cakeIntro03").css("display", "none");
+	$("#cakeIntro04").css("display", "none");
+	$("#cakeIntro05").css("display", "none");
+	$("#cakeIntro06").css("display", "none");
 }
 </script>
 </head>
@@ -29,63 +54,142 @@ function back_cakemain()
 		預約電話：03-658-0623
 	</div>
 	<div class="cakeimg ContentFontStyle" style="margin-top: 20px">
-		<img id="cake_1" src="images/cake/cake01.jpg" alt="cake01">
+		<img id="cake_1" src="images/cake/cake01.jpg" alt="cake01" style="cursor:pointer">
   		<div class="desc">紅寶石 CheeseCake</div>		
 	</div>
 	<div class="cakeimg ContentFontStyle" style="margin-top: 20px">
-		<a target="_blank" href="images/cake/cake04.jpg">
-			<img src="images/cake/cake04.jpg" alt="cake04">
-		</a>
-  		<div class="desc">藍莓 CheeseCake<br>
-						  $830/6吋<br>
-						  $900/7吋
-		</div>
+		<img id="cake_2" src="images/cake/cake04.jpg" alt="cake04" style="cursor:pointer">
+  		<div class="desc">藍莓 CheeseCake</div>
 	</div>
 	<div class="cakeimg ContentFontStyle" style="margin-top: 20px">
-		<a target="_blank" href="images/cake/cake03.jpg">
-			<img src="images/cake/cake03.jpg" alt="cake03">
-		</a>
-  		<div class="desc">覆盆梅 CheeseCake<br>
-						  $830/6吋<br>
-						  $900/7吋
-		</div>
+		<img id="cake_3" src="images/cake/cake03.jpg" alt="cake03" style="cursor:pointer">
+  		<div class="desc">覆盆莓 CheeseCake</div>
 	</div>
 	<div class="cakeimg ContentFontStyle" style="margin-top: 20px">
-		<a target="_blank" href="images/cake/cake08.jpg">
-			<img src="images/cake/cake08.jpg" alt="cake08">
-		</a>
-  		<div class="desc">紅寶石×柑橙 CheeseCake<br>
-						  $380/3吋<br>
-						  $730/6吋<br>
-						  $800/7吋
-		</div>
+		<img id="cake_4" src="images/cake/cake08.jpg" alt="cake08" style="cursor:pointer">
+  		<div class="desc">紅寶石×柑橙 CheeseCake</div>
 	</div>
 	<div class="cakeimg ContentFontStyle" style="margin-top: 20px">
-		<a target="_blank" href="images/cake/cake02.jpg">
-			<img src="images/cake/cake02.jpg" alt="cake02">
-		</a>
-  		<div class="desc">莓果 CheeseCake<br>
-						  $880/6吋<br>
-						  $950/7吋
-		</div>
+		<img id="cake_5" src="images/cake/cake02.jpg" alt="cake02" style="cursor:pointer">
+  		<div class="desc">莓果 CheeseCake</div>
+	</div>
+	<div class="cakeimg ContentFontStyle" style="margin-top: 20px">
+		<img id="cake_6" src="images/cake/cake05.jpg" alt="cake05" style="cursor:pointer">
+  		<div class="desc">蜜桃 CheeseCake</div>
 	</div>
 </div>
 <div id="cakeIntro01" style="display:none">
 	<table border="0" style="width:100%; margin-top:25px">
-		<tr height="30px">
-			<td class="ContentIntroTitle" align="center"><span style="vertical-align:middle;">紅寶石 CheeseCake</span></td>				
-		</tr>
 		<tr>
 			<td valign="center" width="60%" align="center">
-			    <img src="images/cake/cake01.jpg" alt="cake01" width="70%" style="margin: 20px;">
+			    <img src="images/cake/cake01.jpg" alt="cake01" width="70%" style="margin: 50px;">
 			</td>
 			<td class="cakeimg ContentFontStyle" style="margin-top: 20px" valign="middle" width="40%">
-				<font color="#FFA500">紅寶石 CheeseCake</font><br>
-				------------------------<br><br>
-				成分：石榴、檸檬、Cheese、OREO餅乾、咖啡粉<br><br>				
-				$380/3吋<br>
-				$730/6吋<br>
-				$800/7吋<br><br><br><br>
+				<font class="cakeIntroTitle" color="#DC6161">紅寶石 CheeseCake</font><br>
+				----------------<br><br>
+				成分：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;石榴、檸檬、Cheese、OREO餅乾、咖啡粉<br><br>
+				嚐鮮價：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;3吋&nbsp;&nbsp;$380<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;6吋&nbsp;&nbsp;$730<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;7吋&nbsp;&nbsp;$800<br><br><br><br>
+				<span style="cursor:pointer; text-decoration:underline; color:blue" onclick="back_cakemain();">Back</span>
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="cakeIntro02" style="display:none">
+	<table border="0" style="width:100%; margin-top:25px">
+		<tr>
+			<td valign="center" width="60%" align="center">
+			    <img src="images/cake/cake04.jpg" alt="cake04" width="70%" style="margin: 50px;">
+			</td>
+			<td class="cakeimg ContentFontStyle" style="margin-top: 20px" valign="middle" width="40%">
+				<font class="cakeIntroTitle" color="#642EFE">藍莓 CheeseCake</font><br>
+				----------------<br><br>
+				成分：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;藍莓、檸檬、Cheese、OREO餅乾、咖啡粉<br><br>
+				嚐鮮價：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;6吋&nbsp;&nbsp;$830<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;7吋&nbsp;&nbsp;$900<br><br><br><br>			
+				<span style="cursor:pointer; text-decoration:underline; color:blue" onclick="back_cakemain();">Back</span>
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="cakeIntro03" style="display:none">
+	<table border="0" style="width:100%; margin-top:25px">
+		<tr>
+			<td valign="center" width="60%" align="center">
+			    <img src="images/cake/cake03.jpg" alt="cake03" width="70%" style="margin: 50px;">
+			</td>
+			<td class="cakeimg ContentFontStyle" style="margin-top: 20px" valign="middle" width="40%">
+				<font class="cakeIntroTitle" color="#FE2E64">覆盆莓 CheeseCake</font><br>
+				----------------<br><br>
+				成分：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;覆盆莓、檸檬、Cheese、OREO餅乾、咖啡粉<br><br>
+				嚐鮮價：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;6吋&nbsp;&nbsp;$830<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;7吋&nbsp;&nbsp;$900<br><br><br><br>			
+				<span style="cursor:pointer; text-decoration:underline; color:blue" onclick="back_cakemain();">Back</span>
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="cakeIntro04" style="display:none">
+	<table border="0" style="width:100%; margin-top:25px">
+		<tr>
+			<td valign="center" width="60%" align="center">
+			    <img src="images/cake/cake08.jpg" alt="cake08" width="70%" style="margin: 50px;">
+			</td>
+			<td class="cakeimg ContentFontStyle" style="margin-top: 20px" valign="middle" width="40%">
+				<font class="cakeIntroTitle" color="#FE9A2E">紅寶石×柑橙 CheeseCake</font><br>
+				----------------<br><br>
+				成分：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;紅寶石、柑橙、檸檬、Cheese、OREO餅乾、咖啡粉<br><br>
+				嚐鮮價：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;3吋&nbsp;&nbsp;$380<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;6吋&nbsp;&nbsp;$730<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;7吋&nbsp;&nbsp;$800<br><br><br><br>	
+				<span style="cursor:pointer; text-decoration:underline; color:blue" onclick="back_cakemain();">Back</span>
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="cakeIntro05" style="display:none">
+	<table border="0" style="width:100%; margin-top:25px">
+		<tr>
+			<td valign="center" width="60%" align="center">
+			    <img src="images/cake/cake02.jpg" alt="cake02" width="70%" style="margin: 50px;">
+			</td>
+			<td class="cakeimg ContentFontStyle" style="margin-top: 20px" valign="middle" width="40%">
+				<font class="cakeIntroTitle" color="#FE9A2E">莓果 CheeseCake</font><br>
+				----------------<br><br>
+				成分：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;覆盆莓、藍莓、檸檬、Cheese、OREO餅乾、咖啡粉<br><br>
+				嚐鮮價：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;6吋&nbsp;&nbsp;$880<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;7吋&nbsp;&nbsp;$950<br><br><br><br>	
+				<span style="cursor:pointer; text-decoration:underline; color:blue" onclick="back_cakemain();">Back</span>
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="cakeIntro06" style="display:none">
+	<table border="0" style="width:100%; margin-top:25px">
+		<tr>
+			<td valign="center" width="60%" align="center">
+			    <img src="images/cake/cake05.jpg" alt="cake05" width="70%" style="margin: 50px;">
+			</td>
+			<td class="cakeimg ContentFontStyle" style="margin-top: 20px" valign="middle" width="40%">
+				<font class="cakeIntroTitle" color="#FE9A2E">蜜桃 CheeseCake</font><br>
+				----------------<br><br>
+				成分：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;蜜桃、檸檬、Cheese、OREO餅乾、咖啡粉<br><br>
+				嚐鮮價：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;3吋&nbsp;&nbsp;$380<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;6吋&nbsp;&nbsp;$730<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;7吋&nbsp;&nbsp;$800<br><br><br><br>	
 				<span style="cursor:pointer; text-decoration:underline; color:blue" onclick="back_cakemain();">Back</span>
 			</td>
 		</tr>
