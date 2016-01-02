@@ -4,7 +4,7 @@
 .abs {position:absolute}
 .rla {position:relative}
 .AlignCenter {text-align:center}
-.MenuFontStyle {text-align:center; letter-spacing:3.5px; font-family:Monospace; font-size:24px; font-weight:bolder; font-variant:small-caps}
+.topMenuFontStyle {text-align:center; letter-spacing:3.5px; font-family:Monospace; font-size:24px; font-weight:bolder; font-variant:small-caps}
 .ContentIntroTitle{ letter-spacing:2.5px; font-family:Monospace, 'Microsoft JhengHei'; font-size:30px; font-weight:bolder; color:#000000; font-variant:small-caps; }
 .ContentIntroText{ letter-spacing:2.5px; font-family:Monospace, 'Microsoft JhengHei'; font-size:18px; font-weight:bold; color:#000000; font-variant:small-caps; }
 .ContentFontStyle{ letter-spacing:2.5px; font-family:Monospace, 'Microsoft JhengHei'; font-size:15px; font-weight:bolder; color:#000000; font-variant:small-caps; }
@@ -23,16 +23,16 @@
 /****************************************************/
 #top{ background-color:#FFF; position:relative; }
 
-#menu{ list-style:none; padding:0; margin:0; background:rgba(0,0,0,0.6); }
-#menu ul{ list-style:none; }
-#menu li{ height:36px; line-height:36px; padding:0 10px; float:left; overflow:visible; position:relative; cursor:pointer; display:block; }
-#menu a{ height:36px; line-height:36px; float:left; text-decoration:none; color:#898989; background-image:none; }
+#topbar{ list-style:none; padding:0; margin:0; background:rgba(0,0,0,0.6); }
+#topbar ul{ list-style:none; }
+#topbar li{ height:36px; line-height:36px; padding:0 10px; float:left; overflow:visible; position:relative; cursor:pointer; display:block; }
+#topbar a{ height:36px; line-height:36px; float:left; text-decoration:none; color:#898989; background-image:none; }
 
 /****************************************************/
 /*			  		menu.html 				  		*/
 /****************************************************/
-#tr_menu td{ width: 150px; color: #FFFFFF; }
-#tr_menu td:hover{ color:#FFA500; cursor:pointer; }
+#top_menu td{ color: #FFFFFF; padding-right:30px; padding-left:30px }
+#top_menu td:hover{ color:#FFA500; cursor:pointer; }
 
 /****************************************************/
 /*				  	cake.html				 		*/

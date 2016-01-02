@@ -17,18 +17,18 @@ var gui={
 			gui.timer.redirect.restart('gui.main.load("'+p+'")', t); 
 		}
 	},
-	menu:{
+	topbar:{
 		page:"",
 		load:function(p){
-			$("div#menu").html("");
+			$("div#topbar").html("");
 			gui.timer.redirect.stop();
 			$.ajaxSetup({ cache: false });
-			$("div#menu").load(p, function(){
-				gui.menu.page=p; 
+			$("div#topbar").load(p, function(){
+				gui.topbar.page=p; 
 			});
 		},
 		reload:function(p){
-			gui.menu.load(gui.menu.page); 
+			gui.topbar.load(gui.topbar.page); 
 		}
 	},
 	content:{
