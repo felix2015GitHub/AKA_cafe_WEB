@@ -4,18 +4,18 @@
 .abs {position:absolute}
 .rla {position:relative}
 .AlignCenter {text-align:center}
-.topMenuFontStyle {text-align:center; letter-spacing:3.5px; font-family:Monospace; font-size:24px; font-weight:bolder; font-variant:small-caps}
+.MenuFontStyle {text-align:center; letter-spacing:3.5px; font-family:Monospace; font-size:24px; font-weight:bolder; font-variant:small-caps}
 .ContentIntroTitle{ letter-spacing:2.5px; font-family:Monospace, 'Microsoft JhengHei'; font-size:30px; font-weight:bolder; color:#000000; font-variant:small-caps; }
 .ContentIntroText{ letter-spacing:2.5px; font-family:Monospace, 'Microsoft JhengHei'; font-size:18px; font-weight:bold; color:#000000; font-variant:small-caps; }
 .ContentFontStyle{ letter-spacing:2.5px; font-family:Monospace, 'Microsoft JhengHei'; font-size:15px; font-weight:bolder; color:#000000; font-variant:small-caps; }
 .topimg {
-	background: transparent url(../images/top_bg.jpg) no-repeat;
+	background: transparent url("https://googledrive.com/host/0B-b8hVku6bO-RFNGWmlreGtvS3c") no-repeat;
 	padding-right:5px;
 	width:100%;
 	height:100%;
 	margin:0 auto;
 	_background: transparent;  
-	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/top_1.jpg', sizingMethod='scale');  
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://googledrive.com/host/0B-b8hVku6bO-RFNGWmlreGtvS3c', sizingMethod='scale');  
 }
 
 /****************************************************/
@@ -23,16 +23,16 @@
 /****************************************************/
 #top{ background-color:#FFF; position:relative; }
 
-#topbar{ list-style:none; padding:0; margin:0; background:rgba(0,0,0,0.6); }
-#topbar ul{ list-style:none; }
-#topbar li{ height:36px; line-height:36px; padding:0 10px; float:left; overflow:visible; position:relative; cursor:pointer; display:block; }
-#topbar a{ height:36px; line-height:36px; float:left; text-decoration:none; color:#898989; background-image:none; }
+#menu{ list-style:none; padding:0; margin:0; background:rgba(0,0,0,0.6); }
+#menu ul{ list-style:none; }
+#menu li{ height:36px; line-height:36px; padding:0 10px; float:left; overflow:visible; position:relative; cursor:pointer; display:block; }
+#menu a{ height:36px; line-height:36px; float:left; text-decoration:none; color:#898989; background-image:none; }
 
 /****************************************************/
 /*			  		menu.html 				  		*/
 /****************************************************/
-#top_menu td{ color: #FFFFFF; padding-right:30px; padding-left:30px }
-#top_menu td:hover{ color:#FFA500; cursor:pointer; }
+#tr_menu td{ width: 150px; color: #FFFFFF; }
+#tr_menu td:hover{ color:#FFA500; cursor:pointer; }
 
 /****************************************************/
 /*				  	cake.html				 		*/
