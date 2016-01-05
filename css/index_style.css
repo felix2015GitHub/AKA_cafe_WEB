@@ -9,13 +9,13 @@
 .ContentIntroText{ letter-spacing:2.5px; font-family:Monospace, 'Microsoft JhengHei'; font-size:18px; font-weight:bold; color:#000000; font-variant:small-caps; }
 .ContentFontStyle{ letter-spacing:2.5px; font-family:Monospace, 'Microsoft JhengHei'; font-size:15px; font-weight:bolder; color:#000000; font-variant:small-caps; }
 .topimg {
-	background: transparent url(../images/top_bg.jpg) no-repeat;
+	background: transparent url("https://googledrive.com/host/0B-b8hVku6bO-RFNGWmlreGtvS3c") no-repeat;
 	padding-right:5px;
 	width:100%;
 	height:100%;
 	margin:0 auto;
 	_background: transparent;  
-	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/top_1.jpg', sizingMethod='scale');  
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://googledrive.com/host/0B-b8hVku6bO-RFNGWmlreGtvS3c', sizingMethod='scale');  
 }
 
 /****************************************************/
