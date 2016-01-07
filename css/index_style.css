@@ -4,7 +4,7 @@
 .abs {position:absolute}
 .rla {position:relative}
 .AlignCenter {text-align:center}
-.topMenuFontStyle {text-align:center; letter-spacing:3.5px; font-family:Monospace; font-size:24px; font-weight:bolder; font-variant:small-caps}
+.topMenuFontStyle {text-align:center; letter-spacing:3.5px; font-family:Monospace; font-size:16px; font-weight:bolder; font-variant:small-caps}
 .ContentIntroTitle{ letter-spacing:2.5px; font-family:Monospace, 'Microsoft JhengHei'; font-size:30px; font-weight:bolder; color:#000000; font-variant:small-caps; }
 .ContentIntroText{ letter-spacing:2.5px; font-family:Monospace, 'Microsoft JhengHei'; font-size:18px; font-weight:bold; color:#000000; font-variant:small-caps; }
 .ContentFontStyle{ letter-spacing:2.5px; font-family:Monospace, 'Microsoft JhengHei'; font-size:15px; font-weight:bolder; color:#000000; font-variant:small-caps; }
@@ -27,6 +27,12 @@
 #topbar ul{ list-style:none; }
 #topbar li{ height:36px; line-height:36px; padding:0 10px; float:left; overflow:visible; position:relative; cursor:pointer; display:block; }
 #topbar a{ height:36px; line-height:36px; float:left; text-decoration:none; color:#898989; background-image:none; }
+
+/****************************************************/
+/*			  		home.html 				  		*/
+/****************************************************/
+.homeItemStyle{ font-weight: 250; font-family:Monospace; font-weight:bolder; line-height: 1.5; letter-spacing: 1.5px; }
+.homeContentStyle{ font-size:17px; font-family:Monospace; font-weight:bolder; line-height: 1; letter-spacing: 1.5px; }
 
 /****************************************************/
 /*			  		menu.html 				  		*/
