@@ -9,7 +9,9 @@ $(document).ready(function(){
     $("#first_img").attr("src", base64Img);
    });
   */
+  $("#myCarousel_art").carousel("pause");
 });
+
 </script>
 </head>
 
@@ -20,16 +22,26 @@ $(document).ready(function(){
       <div class="col-md-7" style="width:45%; height:250px; margin-right:20px">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
+<<<<<<< Updated upstream
 <!--           <ol class="carousel-indicators">
+=======
+          <!--
+          <ol class="carousel-indicators">
+>>>>>>> Stashed changes
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
             <li data-target="#myCarousel" data-slide-to="3"></li>
             <li data-target="#myCarousel" data-slide-to="4"></li>
+<<<<<<< Updated upstream
           </ol> -->
+=======
+          </ol>
+          -->
+>>>>>>> Stashed changes
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img id="first_img" class="first-slide" src="https://googledrive.com/host/0B-b8hVku6bO-TjFOLU5ieWJTMms" alt="First slide" style="height:250px">
+              <img class="first-slide" src="https://googledrive.com/host/0B-b8hVku6bO-TjFOLU5ieWJTMms" alt="First slide" style="height:250px">
 <!--               <div class="container">
                 <div class="carousel-caption">                
                   <h1>Example headline.</h1>
@@ -46,21 +58,21 @@ $(document).ready(function(){
               </div>
             </div>
             <div class="item">
-              <img class="second-slide" src="https://googledrive.com/host/0B-b8hVku6bO-SHBKNV9XdHNvd1E" alt="Second slide" style="height:250px">
+              <img class="third-slide" src="https://googledrive.com/host/0B-b8hVku6bO-SHBKNV9XdHNvd1E" alt="Second slide" style="height:250px">
               <div class="container">
                 <div class="carousel-caption">
                 </div>
               </div>
             </div>
             <div class="item">
-              <img class="second-slide" src="https://googledrive.com/host/0B-b8hVku6bO-SWJiTWhRc1NvYXc" alt="Second slide" style="height:250px">
+              <img class="fourth-slide" src="https://googledrive.com/host/0B-b8hVku6bO-SWJiTWhRc1NvYXc" alt="Second slide" style="height:250px">
               <div class="container">
                 <div class="carousel-caption">
                 </div>
               </div>
             </div>
             <div class="item">
-              <img class="third-slide" src="https://googledrive.com/host/0B-b8hVku6bO-bVdzc1RqWEEtUHM" alt="Third slide" style="height:250px">
+              <img class="fifth-slide" src="https://googledrive.com/host/0B-b8hVku6bO-bVdzc1RqWEEtUHM" alt="Third slide" style="height:250px">
               <div class="container">
                 <div class="carousel-caption">
                 </div>
@@ -90,12 +102,88 @@ $(document).ready(function(){
     <hr class="featurette-divider">
 <!-- =========== Section 2 =========== -->
     <div class="row featurette">
-      <div class="col-md-7 col-md-push-5">
+      <div class="col-md-7">
         <h2 class="homeItemStyle">藝文指南<span class="text-muted" style="font-size:20px">  Arts& Exhibition</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
-      <div class="col-md-5 col-md-pull-7">
-        <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+    </div>
+    <div class="row featurette">
+      <div style="height:250px;">
+         <div id="myCarousel_art" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="item active" style="background:white">
+               <div>
+                  <table style="width:100%;height:250px">
+                    <tr>
+                      <td valign="top" align="center" style="width:20%">
+                        <img src="images/rent/rent01.jpg" alt="rent01" height="200px" style="">
+                        <div class="">
+                          <h2>Title1</h2>
+                        </div>
+                      </td>
+                      <td valign="top" align="center" style="width:20%">
+                        <img src="images/rent/rent02.jpg" alt="rent01" height="200px" style="">
+                        <div class="">
+                          <h2>Title2</h2>
+                        </div>
+                      </td>
+                      <td valign="top" align="center" style="width:20%">
+                        <img src="images/rent/rent03.jpg" alt="rent01" height="200px" style="">
+                        <div class="">
+                          <h2>Title3</h2>
+                        </div>
+                      </td>
+                      <td valign="top" align="center" style="width:20%">
+                        <img src="images/rent/rent04.jpg" alt="rent01" height="200px" style="">
+                        <div class="">
+                          <h2>Title4</h2>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+            </div>
+            <div class="item" style="background:white">
+                <div>
+                  <table style="width:100%;height:250px">
+                    <tr>
+                      <td valign="top" align="center" style="width:20%">
+                        <img src="images/rent/rent02.jpg" alt="rent01" height="200px" style="">
+                        <div class="">
+                          <h2>Title5</h2>
+                        </div>
+                      </td>
+                      <td valign="top" align="center" style="width:20%">
+                        <img src="images/rent/rent03.jpg" alt="rent01" height="200px" style="">
+                        <div class="">
+                          <h2>Title6</h2>
+                        </div>
+                      </td>
+                      <td valign="top" align="center" style="width:20%">
+                        <div class="">
+                          <h2>Title7</h2>
+                        </div>
+                      </td>
+                      <td valign="top" align="center" style="width:20%">
+                        <div class="">
+                          <h2>Title8</h2>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+            </div>
+          </div>
+          <div class="left carousel-controlxxx">
+            <a href="#myCarousel_art" data-slide="prev">
+              <span class="icon-prev"></span>
+            </a>
+          </div>
+          <div  class="right carousel-controlxxx">
+            <a href="#myCarousel_art" data-slide="next">
+              <span class="icon-next"></span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 <!-- =========== Section 2 & =========== -->

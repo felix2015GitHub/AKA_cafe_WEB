@@ -33,9 +33,13 @@
 /*			  		home.html 				  		*/
 /****************************************************/
 .homeItemStyle{ font-weight: 250; font-family:Monospace; font-weight:bolder; line-height: 1.5; letter-spacing: 1.5px; }
+<<<<<<< Updated upstream
 .homeContentStyle{ font-size:17px; font-family:Monospace; font-weight:bold; line-height: 1; letter-spacing: 1.5px; }
 
 .ContentIntroText{ letter-spacing:2.5px; font-family:Monospace, 'Microsoft JhengHei'; font-size:16px; font-weight:bold; color:#000000; font-variant:small-caps; }
+=======
+.homeContentStyle{ font-size:17px; font-family:Monospace; font-weight:bolder; line-height: 1; letter-spacing: 1.5px; cursor:pointer; }
+>>>>>>> Stashed changes
 
 /****************************************************/
 /*			  		menu.html 				  		*/
@@ -66,3 +70,88 @@ div.rentimg{
 }
 div.rentimg img{ width: 100%; height: auto; }
 div.desc{ padding: 15px; text-align: center; }
+
+.carousel-controlxxx{
+	position:absolute;
+	top:100px;
+	/*margin-bottom: -25px;*/
+	bottom:0;
+	left:0;
+	width:30px;
+	height:30px;
+	/*font-size:40px;*/
+	color:gray;
+	text-align:center;
+	vertical-align:center;
+	text-shadow:0 1px 2px rgba(0,0,0,.6);
+	filter:alpha(opacity=50);
+	opacity:.5;
+	border:2px solid gray;
+}
+/*
+.carousel-controlxxx.left{
+	background-image:-webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+	background-image:-o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+	background-image:-webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
+	background-image:linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+	background-repeat:repeat-x
+}
+*/
+.carousel-controlxxx.right{
+	right:0;
+	left:auto;
+	/*
+	background-image:-webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+	background-image:-o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+	background-image:-webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
+	background-image:linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+	background-repeat:repeat-x
+	*/
+}
+.carousel-controlxxx:hover{
+	color:black;
+	text-decoration:none;
+	filter:alpha(opacity=90);
+	outline:0;
+	opacity:.9;
+}
+.carousel-controlxxx .icon-prev,
+.carousel-controlxxx .icon-next {
+  /*position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;*/
+}
+/*
+.carousel-controlxxx .icon-next,.carousel-controlxxx .icon-prev{
+	position:absolute;
+	top:50%;
+	z-index:5;
+	display:inline-block;
+	margin-top:-10px
+}
+*/
+.carousel-controlxxx .icon-prev:before {
+  content: '\2039';
+}
+
+.carousel-controlxxx .icon-next:before {
+  content: '\203a';
+}
+.carousel-controlxxx .icon-next,.carousel-controlxxx .icon-prev{
+	width:30px;
+	height:30px;
+	/*margin-top:-15px;*/
+	line-height: 30px;
+	font-size:30px;
+	font-family: serif;
+}
+/*.carousel-controlxxx .icon-next{margin-right:-15px}
+.carousel-controlxxx .icon-prev{margin-left:-25px}*/
