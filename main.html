@@ -15,7 +15,7 @@ $(document).ready(function(){
 });
 
 //Event: Switch page
-//function show_home() { gui.content.load("home.html"); }
+function show_home() { window.location.reload(); }
 function show_studio() { gui.content.load("studio.html"); }
 function show_menu() { gui.content.load("menu.html"); }
 function show_exhibition() { gui.content.load("exhibition.html"); }
@@ -29,12 +29,14 @@ function show_fb() {window.open("https://www.facebook.com/ciaoaka", '_blank');}
 </head>
 <body>
 <div>
-	<div id="top" style="height:356px">
+<nav class="navbar navbar-fixed-top">
+	<div id="top" style="height:320px">
 		<div id="top_content" class="abs topimg"></div>
 	</div>
-	<div id="topbar" class="abs" style="top:296px; width:100%; height:60px"></div>
-	<div id="content" class="rla" style="top:60px; margin-top:0;"></div>
-	<div id="footer" class="rla" style="top:60px;height:80px;clear:both">
+	<div id="topbar" class="abs" style="top:250px; width:100%; height:60px"></div>
+</nav>
+	<div id="content" class="rla" style="top:380px; margin-top:0;"></div>
+	<div id="footer" class="rla" style="top:380px;height:80px;clear:both">
 		<div class="abs ContentFontStyle" style="top:20px;left:50%;margin-left:-410px">
 			© 2015 AKA Cafe | Tel:03-6580623 | 地址: 302 新竹縣竹北市嘉豐六路二段47號 | 
 			<span style="cursor:pointer;color:blue" onclick="show_fb();">Facebook</span>
