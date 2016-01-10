@@ -69,10 +69,12 @@ div.desc{ padding: 15px; text-align: center; }
 	bottom:0;
 	left:0;
 }
+.carousel-control_art.left{
+	left:-45px;
+}
 .carousel-control_art.right{
-	right:0;
+	right:-45px;
 	left:auto;
 }
-
 
 
