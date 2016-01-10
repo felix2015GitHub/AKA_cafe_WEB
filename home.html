@@ -11,6 +11,9 @@ $(document).ready(function(){
   */
   checkitem();
   $("#myCarousel_art").carousel("pause");
+  $("#myCarousel_art").children(".carousel-control_art").click(function(){
+    $("#myCarousel_art").children(".carousel-control_art").hide();
+  });
   $("#myCarousel_art").on("slid.bs.carousel", "", checkitem);
 });
 
