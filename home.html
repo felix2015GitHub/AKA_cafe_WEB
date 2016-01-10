@@ -9,9 +9,23 @@ $(document).ready(function(){
     $("#first_img").attr("src", base64Img);
    });
   */
+  checkitem();
   $("#myCarousel_art").carousel("pause");
+  $("#myCarousel_art").on("slid.bs.carousel", "", checkitem);
 });
 
+function checkitem(){
+  var $this = $("#myCarousel_art");
+  if($("#myCarousel_art .carousel-inner .item:first").hasClass("active")) {
+    $this.children(".left.carousel-control_art").hide();
+    $this.children(".right.carousel-control_art").show();
+  } else if($("#myCarousel_art .carousel-inner .item:last").hasClass("active")) {
+    $this.children(".right.carousel-control_art").hide();
+    $this.children(".left.carousel-control_art").show();
+  } else {
+    $this.children(".carousel-control_art").show();
+  } 
+}
 </script>
 </head>
 
@@ -22,33 +36,9 @@ $(document).ready(function(){
       <div class="col-md-7" style="width:45%; height:250px; margin-right:20px">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
-<<<<<<< Updated upstream
-<!--           <ol class="carousel-indicators">
-=======
-          <!--
-          <ol class="carousel-indicators">
->>>>>>> Stashed changes
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-            <li data-target="#myCarousel" data-slide-to="4"></li>
-<<<<<<< Updated upstream
-          </ol> -->
-=======
-          </ol>
-          -->
->>>>>>> Stashed changes
           <div class="carousel-inner" role="listbox">
             <div class="item active">
               <img class="first-slide" src="https://googledrive.com/host/0B-b8hVku6bO-TjFOLU5ieWJTMms" alt="First slide" style="height:250px">
-<!--               <div class="container">
-                <div class="carousel-caption">                
-                  <h1>Example headline.</h1>
-                  <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>                 
-                </div>
-              </div> -->
             </div>
             <div class="item">
               <img class="second-slide" src="https://googledrive.com/host/0B-b8hVku6bO-Q2tad0dWQ3dySjQ" alt="Second slide" style="height:250px">
@@ -173,14 +163,18 @@ $(document).ready(function(){
                 </div>
             </div>
           </div>
-          <div class="left carousel-controlxxx">
+          <div class="left carousel-control_art">
             <a href="#myCarousel_art" data-slide="prev">
-              <span class="icon-prev"></span>
+              <button type="button" class="btn btn-default btn-lg">
+                <span><</span>
+              </button>
             </a>
           </div>
-          <div  class="right carousel-controlxxx">
+          <div  class="right carousel-control_art">
             <a href="#myCarousel_art" data-slide="next">
-              <span class="icon-next"></span>
+              <button type="button" class="btn btn-default btn-lg">
+                <span>></span>
+              </button>
             </a>
           </div>
         </div>
