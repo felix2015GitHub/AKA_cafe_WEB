@@ -4,7 +4,7 @@
 .abs {position:absolute}
 .rla {position:relative}
 .AlignCenter {text-align:center}
-.topMenuFontStyle {text-align:center; letter-spacing:3.5px; font-family:Monospace; font-size:17px; font-weight:bolder; font-variant:small-caps}
+.topMenuFontStyle {text-align:center; vertical-align: middle; letter-spacing:2.5px; font-family:Monospace; font-size:17px; font-weight:bolder; font-variant:small-caps; color:#FFF;}
 .ContentIntroTitle{ letter-spacing:2.5px; font-family:Monospace, 'Microsoft JhengHei'; font-size:30px; font-weight:bolder; color:#000000; font-variant:small-caps; }
 .ContentIntroText{ letter-spacing:2.5px; font-family:Monospace, 'Microsoft JhengHei'; font-size:18px; font-weight:bold; color:#000000; font-variant:small-caps; }
 .ContentFontStyle{ letter-spacing:2.5px; font-family:Monospace, 'Microsoft JhengHei'; font-size:15px; font-weight:bolder; color:#000000; font-variant:small-caps; }
