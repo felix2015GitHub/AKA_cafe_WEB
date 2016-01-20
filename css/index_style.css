@@ -16,6 +16,36 @@
 	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://googledrive.com/host/0Bx3TZFC1zM7MLWhYbm5WaHo5MkU', sizingMethod='scale');  
 }
 
+.page-top {
+    padding-bottom: 9px;
+    margin: 50px 0 50px;
+}
+
+.row_topbar {
+  text-align:center;
+  letter-spacing:1px;
+  color:#000;
+}
+.row_topbar:hover {
+  cursor:pointer;
+}
+.row_topbar:hover .topbar_en {
+  display: none;
+}
+.row_topbar:hover .topbar_zh {
+  display: block;
+}
+.topbar_en {
+  font-family: "NeutraText-Light", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size:15px;
+  display: block;
+}
+.topbar_zh {
+  font-family:Monospace, 'Microsoft JhengHei';
+  font-size:18px;
+  display: none;
+}
 /****************************************************/
 /*			  		main.html 				  		*/
 /****************************************************/
@@ -76,6 +106,34 @@ div.desc{ padding: 15px; text-align: center; }
 	right:-45px;
 	left:auto;
 }
+
+/****************************************************/
+/*			 			grid						*/
+/****************************************************/
+
+.row {
+  height: 40px;
+  margin-bottom: 20px;
+}
+.row .row {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+[class*="col-"] {
+/*  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #eee;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid #ddd;
+  border: 1px solid rgba(86,61,124,.2);*/
+}
+
+hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 
 /****************************************************/
 /*			 		portfolio.html					*/
