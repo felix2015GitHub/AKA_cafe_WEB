@@ -138,7 +138,7 @@ hr {
 /****************************************************/
 /*			 		portfolio.html					*/
 /****************************************************/
-#portfolios img:hover {
+/*#portfolios img:hover {
 	cursor: pointer;
 }
 
@@ -147,6 +147,21 @@ hr {
 }
 .hoverarea:hover {
 	display: inline;
+}*/
+
+.hoverarea {
+  display: none;
+  position: absolute; 
+  margin: 20px 20px;
+  width: 306px; height: 306px; 
+  background-color: rgba(255,255,255,.4); 
+  z-index: 200;
+/*  opacity: 0;*/
+  transition: opacity 0.4s ease-in-out;
 }
 
-
+.col-md-4:hover .hoverarea {
+  display: block;
+  cursor:pointer;
+  transition: opacity 0.4s ease-in-out;
+}
