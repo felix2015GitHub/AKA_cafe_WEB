@@ -150,18 +150,23 @@ hr {
 }*/
 
 .hoverarea {
-  display: none;
-  position: absolute; 
+  opacity:0;
+  position: absolute;  
   margin: 20px 20px;
-  width: 306px; height: 306px; 
-  background-color: rgba(255,255,255,.4); 
+  width: 306px; 
+  height: 0 px;
   z-index: 200;
-/*  opacity: 0;*/
-  transition: opacity 0.4s ease-in-out;
+
+  -webkit-transition: all .3s ease-in-out .15s;
+  -moz-transition: all .3s ease-in-out .15s;
+  -o-transition: all .3s ease-in-out .15s;
+  -ms-transition: all .3s ease-in-out .15s;
+  transition: all .3s ease-in-out .15s; 
 }
 
 .col-md-4:hover .hoverarea {
-  display: block;
   cursor:pointer;
-  transition: opacity 0.4s ease-in-out;
+  opacity:1;
+  height: 306px;
+  background-color: rgba(255,255,255,.4);
 }
