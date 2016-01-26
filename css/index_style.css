@@ -217,18 +217,61 @@ hr {
   background-color: rgba(255,255,255,.6);
 }
 
-/*.col-md-4:active img{
-  animation-name: stretch;
-  animation-duration: 1.5s; 
-  animation-timing-function: ease-out; 
-  animation-delay: 0;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-fill-mode: none;
-/*  animation-play-state: running;*/
-/*}
+.imgscalebg {
+  background-color: rgba(0,0,0,.95);
+  position: absolute; 
+  top: 0px;
+  left: 0px;
+  z-index: 20;
+  display:none;
+  width: 100%;
+  height: 100%;
+}
 
-@keyframes stretch {
+.imgscale {
+  position: absolute;
+  height: 750px;
+  width: 750px;
+  left: 50%;
+  margin-left: -375px;
+  top: 50%;
+  margin-top: -375px;
+}
+
+/*.imgscalebg {
+  position: absolute; 
+  top: 0px; 
+  left: 0px;
+  width: 100%;
+  height: 100%;
+
+  -webkit-transition: all .5s linear; 
+  -moz-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  -ms-transition: all .5s linear;
+  transition: all .5s linear;  
+}
+
+.col-md-4:active .imgscalebg {
+  cursor:pointer;
+  background-color: rgba(0,0,0,.9);
+}*/
+
+.col-md-42222:active img{
+  -webkit-animation-name: imgAct; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+  animation-name: imgAct;
+  animation-duration: 4s;
+/*  animation-play-state: running; */
+}
+
+imgAct {
+   0%  {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+
   0% {
     transform: scale(1);
     background-color: black;
@@ -238,4 +281,4 @@ hr {
     background-color: yellow;
   }
 }
-*/
+
