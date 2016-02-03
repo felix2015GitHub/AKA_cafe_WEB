@@ -16,6 +16,103 @@
 	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://googledrive.com/host/0Bx3TZFC1zM7MLWhYbm5WaHo5MkU', sizingMethod='scale');  
 }
 
+.page-top {
+    padding-bottom: 9px;
+    margin: 50px 0 50px;
+}
+
+.row_topbar {
+  text-align:center;
+  letter-spacing:1px;
+  color:#000;
+}
+.row_topbar:hover {
+  cursor:pointer;
+}
+.row_topbar:hover .topbar_en {
+  display: none;
+}
+.row_topbar:hover .topbar_zh {
+  display: block;
+}
+.topbar_en {
+  font-family: "NeutraText-Light", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size:15px;
+  display: block;
+}
+.topbar_zh {
+  font-family:Monospace, 'Microsoft JhengHei';
+  font-size:18px;
+  display: none;
+}
+
+.aka_row {
+/*
+  margin-right: -15px;
+  margin-left: -15px;
+  height: 40px;
+  margin-bottom: 20px;
+*/
+  display: none;
+  z-index:300;
+}
+
+.navbar-toggle-aka {
+  position: relative;
+  float: left;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: white;
+  background-image: none;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.navbar-toggle-aka:focus {
+  outline: 0;
+}
+.navbar-toggle-aka .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+.navbar-toggle-aka .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+@media screen and (min-width: 992px) {
+  .navbar-toggle-aka {
+    display: none;
+  }
+  .aka_row, .aka_row-header {
+    display: block !important;
+  }
+  .aka-navbar-collapse {
+    width: auto;
+    border-top: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .aka-navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+}
+
+.aka-navbar-collapse {
+  /*padding-right: 15px;
+  padding-left: 15px;*/
+  overflow-x: visible;
+  -webkit-overflow-scrolling: touch;
+  border-top: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+}
+
 /****************************************************/
 /*			  		main.html 				  		*/
 /****************************************************/
