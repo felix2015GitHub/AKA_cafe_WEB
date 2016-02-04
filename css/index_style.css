@@ -18,12 +18,12 @@
 
 .page-top {
     padding-bottom: 9px;
-    margin: 50px 0 50px;
+    margin: 60px 0 60px;
 }
 
 .row_topbar {
-  text-align:center;
-  letter-spacing:1px;
+  text-align: left;
+  letter-spacing:0.5px;
   color:#000;
 }
 .row_topbar:hover {
@@ -48,14 +48,9 @@
 }
 
 .aka_row {
-/*
-  margin-right: -15px;
-  margin-left: -15px;
-  height: 40px;
-  margin-bottom: 20px;
-*/
+  margin-top: 60px;
   display: none;
-  z-index:300;
+  z-index:500;
 }
 
 .navbar-toggle-aka {
@@ -86,7 +81,11 @@
   .navbar-toggle-aka {
     display: none;
   }
+  .row_topbar {
+  	text-align: center;
+  }
   .aka_row, .aka_row-header {
+  	margin-top: 0px;
     display: block !important;
   }
   .aka-navbar-collapse {
@@ -117,12 +116,12 @@
 /*			  		main.html 				  		*/
 /****************************************************/
 #top{ background-color:#FFF; position:relative; background:rgb(0,0,0); }
-
+/*
 #topbar{ list-style:none; padding:0; margin:0; background:rgba(255,255,255,0.6); }
 #topbar ul{ list-style:none; }
 #topbar li{ height:36px; line-height:36px; padding:0 10px; float:left; overflow:visible; position:relative; cursor:pointer; display:block; }
 #topbar a{ height:36px; line-height:36px; float:left; text-decoration:none; color:#898989; background-image:none; }
-
+*/
 /****************************************************/
 /*			  		home.html 				  		*/
 /****************************************************/
@@ -174,4 +173,89 @@ div.desc{ padding: 15px; text-align: center; }
 	left:auto;
 }
 
+/****************************************************/
+/*			 		portfolio.html					*/
+/****************************************************/
+.hoverarea {
+  position: absolute;  
+  margin: 20px 20px;
+  width: 306px; 
+  height: 306px;
+
+  -webkit-transition: all .5s linear; 
+  -moz-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  -ms-transition: all .5s linear;
+  transition: all .5s linear;  
+}
+
+.col-md-4:hover .hoverarea {
+  cursor:pointer;
+  background-color: rgba(255,255,255,.6);
+}
+
+.imgscalebg {
+  background-color: rgba(0,0,0,.95);
+  position: absolute; 
+  top: 0px;
+  left: 0px;
+  z-index: 20;
+  display:none;
+  width: 100%;
+  height: 100%;
+}
+
+.imgscale {
+  position: absolute;
+  height: 750px;
+  width: 750px;
+  left: 50%;
+  margin-left: -375px;
+  top: 50%;
+  margin-top: -375px;
+}
+
+/*.imgscalebg {
+  position: absolute; 
+  top: 0px; 
+  left: 0px;
+  width: 100%;
+  height: 100%;
+
+  -webkit-transition: all .5s linear; 
+  -moz-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  -ms-transition: all .5s linear;
+  transition: all .5s linear;  
+}
+
+.col-md-4:active .imgscalebg {
+  cursor:pointer;
+  background-color: rgba(0,0,0,.9);
+}*/
+
+.col-md-42222:active img{
+  -webkit-animation-name: imgAct; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+  animation-name: imgAct;
+  animation-duration: 4s;
+/*  animation-play-state: running; */
+}
+
+imgAct {
+   0%  {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+
+  0% {
+    transform: scale(1);
+    background-color: black;
+  }
+  100% {
+    transform: scale(3);
+    background-color: yellow;
+  }
+}
 
