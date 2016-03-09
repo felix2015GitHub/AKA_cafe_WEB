@@ -34,6 +34,7 @@
 
   <body>
   <div class="imgscalebg">
+    <span id="exit" class="leave">Ⅹ</span>
     <img id="imgmagify" class="imgscale" src="https://googledrive.com/host/0Bx3TZFC1zM7MTHdtT1M5RFc2Yjg">
   </div>
     <!-- top logo -->
@@ -70,17 +71,21 @@
     
     <!-- content -->
     <div id="portfolios" class="container">
+
       <div class="col-md-4">
+        
         <div class="hoverarea"></div>
         <!--<img src="https://googledrive.com/host/0Bx3TZFC1zM7MTHdtT1M5RFc2Yjg" width="366px" style="padding-right:20px; padding-bottom:15px;">-->
         <div style="width:346px;height:345px;overflow:hidden;">
           <img src="https://googledrive.com/host/0B1iGbicaIC1ZU1pUbF81QlNMX2s" style="width:1100px;height:1100px; margin-top:-170px; margin-left:-310px">
         </div>
       </div>
+
       <div class="col-md-4">
         <div class="hoverarea"></div>
         <img src="https://googledrive.com/host/0Bx3TZFC1zM7MRDNyazRYT0RxVFE" width="366px" style="padding-right:20px; padding-bottom:15px;">
       </div>
+
       <div class="col-md-4">
         <div class="hoverarea"></div>
         <img src="https://googledrive.com/host/0Bx3TZFC1zM7MdlpxTHFKZVVFaFE" width="366px" style="padding-right:20px; padding-bottom:15px;">
@@ -90,10 +95,12 @@
         <div class="hoverarea"></div>
         <img src="https://googledrive.com/host/0Bx3TZFC1zM7MUG9hU0FXelZyZ3M" width="366px" style="padding-right:20px; padding-bottom:15px;">
       </div>
+
       <div class="col-md-4">
         <div class="hoverarea"></div>
         <img src="https://googledrive.com/host/0Bx3TZFC1zM7MTWZheFNxZERjdVk" width="366px" style="padding-right:20px; padding-bottom:15px;">
       </div>
+
       <div class="col-md-4">
         <div class="hoverarea"></div>
         <img src="https://googledrive.com/host/0Bx3TZFC1zM7MdXU2OHlOX2tPMjg" width="366px" style="padding-right:20px; padding-bottom:15px;">
@@ -113,6 +120,9 @@
             height: '+=10px',
             width: '+=10px'
         }, 500);
+      });
+      $("#exit").click(function(){
+        $(".imgscalebg").fadeOut(100);
       });
     </script>
   </body>

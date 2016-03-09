@@ -213,8 +213,16 @@ hr {
 }
 
 .col-md-4:hover .hoverarea {
-  cursor:pointer;
+  cursor: pointer;
   background-color: rgba(255,255,255,.6);
+}
+
+.leave {
+  position: absolute;
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+  right: 0;
 }
 
 .imgscalebg {
