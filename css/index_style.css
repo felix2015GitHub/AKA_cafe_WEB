@@ -197,7 +197,7 @@ hr {
 
 
 /****************************************************/
-/*			 		portfolio.html					*/
+/*			 		portfolio.html					                */
 /****************************************************/
 .hoverarea {
   position: absolute;  
@@ -294,5 +294,57 @@ imgAct {
     transform: scale(3);
     background-color: yellow;
   }
+}
+
+/****************************************************/
+/*          gallery.html                            */
+/****************************************************/
+.imgHover_row {
+  position: absolute;  
+  margin: 20px 20px;
+  width: 335px; 
+  height: 209px;
+
+  -webkit-transition: all .5s linear; 
+  -moz-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  -ms-transition: all .5s linear;
+  transition: all .5s linear;  
+}
+
+.imgHover_col {
+  position: absolute;  
+  margin: 20px 20px;
+  width: 335px; 
+  height: 522px;
+
+  -webkit-transition: all .5s linear; 
+  -moz-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  -ms-transition: all .5s linear;
+  transition: all .5s linear;  
+}
+
+.image_col_1:hover .imgHover_row {
+  cursor: pointer;
+  background-color: rgba(255,255,255,.6);
+}
+
+.image_col_2:hover .imgHover_row {
+  cursor: pointer;
+  background-color: rgba(255,255,255,.6);
+}
+.image_col_2:hover .imgHover_col {
+  cursor: pointer;
+  background-color: rgba(255,255,255,.6);
+}
+
+.image_col_3:hover .imgHover_row {
+  cursor: pointer;
+  background-color: rgba(255,255,255,.6);
+}
+.image_col_3:hover .imgHover_col {
+  cursor: pointer;
+  background-color: rgba(255,255,255,.6);
 }
 
